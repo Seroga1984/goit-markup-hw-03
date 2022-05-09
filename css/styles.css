@@ -23,6 +23,35 @@ body {
   color: var(--main-txt-color--);
 }
 
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+ul,ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  
+}
+
 a {
   text-decoration: none;
 }
@@ -44,10 +73,16 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-txt-color--);
+  margin-right: 100px;
 }
 
 .studio {
   color: var(--studio-txt-color--);
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
 }
 
 .navigation-link {
@@ -56,15 +91,41 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-color1--);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-item {
+  margin-right: 50px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-txt-color--);
 }
+
 .activ {
   color: var(--accent-txt-color--);
 }
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list {
+  margin-right: 50px;
+}
+
+.contact-list:last-child {
+  margin-right: 0px;
+}
+
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -81,6 +142,8 @@ li {
 /* Герой */
 .hero {
   background-color: var(--hero-footer-color);
+  text-align: center;
+  margin-bottom: 94px;
 }
 .hero-title {
   font-weight: 900;
@@ -90,13 +153,15 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sekondari-txt-color2--);
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display:inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -104,7 +169,11 @@ li {
   background-color: var(--accent-txt-color--);
   border: none;
   cursor: pointer;
-}
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+ }
 
 .hero-button:hover,
 .hero-button:focus {
@@ -112,8 +181,21 @@ li {
 }
 /* Преимущества */
 
+.benefits {
+  margin-bottom: 94px;
+}
+
 .benefits-title {
   display: none;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-list-title {
+  width: 270px;
 }
 
 .benefits-subtitle {
@@ -123,6 +205,7 @@ li {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-txt-color1--);
+  margin-bottom: 10px;
 }
 
 .benefits-text {
